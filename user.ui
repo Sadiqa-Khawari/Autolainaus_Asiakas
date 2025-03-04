@@ -690,8 +690,8 @@ border-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="vehiclePictureLabel">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>520</y>
+      <x>300</x>
+      <y>570</y>
       <width>381</width>
       <height>251</height>
      </rect>
@@ -705,7 +705,7 @@ border-color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>uiPictures/OXZ915.png</pixmap>
+     <pixmap>uiPictures/defaultVehicles.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
