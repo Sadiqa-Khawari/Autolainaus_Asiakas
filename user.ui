@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1136</width>
-    <height>924</height>
+    <width>1066</width>
+    <height>900</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -121,10 +121,6 @@ background-color: rgb(140, 51, 85);</string>
     <property name="text">
      <string>LAINAA</string>
     </property>
-    <property name="icon">
-     <iconset resource="userUiRescources.qrc">
-      <normaloff>:/pictures/uiPictures/ota.png</normaloff>:/pictures/uiPictures/ota.png</iconset>
-    </property>
     <property name="iconSize">
      <size>
       <width>42</width>
@@ -233,10 +229,6 @@ background-color: rgb(140, 51, 85);</string>
     </property>
     <property name="text">
      <string>PALAUTA</string>
-    </property>
-    <property name="icon">
-     <iconset resource="userUiRescources.qrc">
-      <normaloff>:/pictures/uiPictures/palauta.drawio.png</normaloff>:/pictures/uiPictures/palauta.drawio.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -711,70 +703,32 @@ border-color: rgb(255, 255, 255);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider">
-    <property name="geometry">
-     <rect>
-      <x>950</x>
-      <y>100</y>
-      <width>61</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>1</number>
-    </property>
-    <property name="pageStep">
-     <number>1</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Orientation::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>890</x>
-      <y>80</y>
-      <width>49</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>uiPictures/unmuted.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>1020</x>
-      <y>80</y>
-      <width>49</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>uiPictures/muted.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
+   <zorder>lenderNameLabel</zorder>
+   <zorder>ssnLineEdit</zorder>
+   <zorder>lenderPictureLabel</zorder>
+   <zorder>keyBarcodeLineEdit</zorder>
+   <zorder>takeCarPushButton</zorder>
+   <zorder>keyPictureLabel</zorder>
+   <zorder>dateLabel</zorder>
+   <zorder>returnCarPushButton</zorder>
+   <zorder>calendarLabel</zorder>
+   <zorder>timeLabel</zorder>
+   <zorder>clockLabel</zorder>
+   <zorder>goBackPushButton</zorder>
+   <zorder>carInfoLabel</zorder>
+   <zorder>okPushButton</zorder>
+   <zorder>keyReturnBarcodeLineEdit</zorder>
+   <zorder>statusFrame</zorder>
+   <zorder>statusLabel</zorder>
+   <zorder>soundCheckBox</zorder>
+   <zorder>vehiclePictureLabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1136</width>
+     <width>1066</width>
      <height>33</height>
     </rect>
    </property>

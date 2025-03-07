@@ -18,15 +18,15 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QTransform)
 from PySide6.QtWidgets import (QApplication, QCheckBox, QFrame, QLabel,
     QLineEdit, QMainWindow, QMenu, QMenuBar,
-    QPlainTextEdit, QPushButton, QSizePolicy, QSlider,
-    QStatusBar, QWidget)
+    QPlainTextEdit, QPushButton, QSizePolicy, QStatusBar,
+    QWidget)
 import userUiRescources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1136, 924)
+        MainWindow.resize(1066, 900)
         icon = QIcon(QIcon.fromTheme(u"emblem-shared"))
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(u"background-color: rgb(223, 32, 112);")
@@ -77,9 +77,6 @@ class Ui_MainWindow(object):
         self.takeCarPushButton.setToolTipDuration(3000)
         self.takeCarPushButton.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "background-color: rgb(140, 51, 85);")
-        icon2 = QIcon()
-        icon2.addFile(u":/pictures/uiPictures/ota.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.takeCarPushButton.setIcon(icon2)
         self.takeCarPushButton.setIconSize(QSize(42, 42))
         self.keyPictureLabel = QLabel(self.centralwidget)
         self.keyPictureLabel.setObjectName(u"keyPictureLabel")
@@ -110,9 +107,6 @@ class Ui_MainWindow(object):
         self.returnCarPushButton.setToolTipDuration(3000)
         self.returnCarPushButton.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "background-color: rgb(140, 51, 85);")
-        icon3 = QIcon()
-        icon3.addFile(u":/pictures/uiPictures/palauta.drawio.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.returnCarPushButton.setIcon(icon3)
         self.returnCarPushButton.setIconSize(QSize(42, 42))
         self.calendarLabel = QLabel(self.centralwidget)
         self.calendarLabel.setObjectName(u"calendarLabel")
@@ -140,9 +134,9 @@ class Ui_MainWindow(object):
         self.goBackPushButton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.goBackPushButton.setStyleSheet(u"background-color: rgb(140, 51, 85);\n"
 "color: rgb(255, 255, 255);")
-        icon4 = QIcon()
-        icon4.addFile(u":/pictures/uiPictures/back.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.goBackPushButton.setIcon(icon4)
+        icon2 = QIcon()
+        icon2.addFile(u":/pictures/uiPictures/back.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.goBackPushButton.setIcon(icon2)
         self.goBackPushButton.setIconSize(QSize(32, 32))
         self.lenderNameLabel = QLabel(self.centralwidget)
         self.lenderNameLabel.setObjectName(u"lenderNameLabel")
@@ -248,8 +242,8 @@ class Ui_MainWindow(object):
         self.soundCheckBox.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "\n"
 "")
-        icon5 = QIcon(QIcon.fromTheme(u"audio-volume-medium"))
-        self.soundCheckBox.setIcon(icon5)
+        icon3 = QIcon(QIcon.fromTheme(u"audio-volume-medium"))
+        self.soundCheckBox.setIcon(icon3)
         self.soundCheckBox.setIconSize(QSize(64, 64))
         self.vehiclePictureLabel = QLabel(self.centralwidget)
         self.vehiclePictureLabel.setObjectName(u"vehiclePictureLabel")
@@ -257,26 +251,29 @@ class Ui_MainWindow(object):
         self.vehiclePictureLabel.setFont(font2)
         self.vehiclePictureLabel.setPixmap(QPixmap(u"uiPictures/defaultVehicles.png"))
         self.vehiclePictureLabel.setScaledContents(True)
-        self.horizontalSlider = QSlider(self.centralwidget)
-        self.horizontalSlider.setObjectName(u"horizontalSlider")
-        self.horizontalSlider.setGeometry(QRect(950, 100, 61, 22))
-        self.horizontalSlider.setMaximum(1)
-        self.horizontalSlider.setPageStep(1)
-        self.horizontalSlider.setOrientation(Qt.Orientation.Horizontal)
-        self.label = QLabel(self.centralwidget)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(890, 80, 49, 61))
-        self.label.setPixmap(QPixmap(u"uiPictures/unmuted.png"))
-        self.label.setScaledContents(True)
-        self.label_2 = QLabel(self.centralwidget)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(1020, 80, 49, 61))
-        self.label_2.setPixmap(QPixmap(u"uiPictures/muted.png"))
-        self.label_2.setScaledContents(True)
         MainWindow.setCentralWidget(self.centralwidget)
+        self.lenderNameLabel.raise_()
+        self.ssnLineEdit.raise_()
+        self.lenderPictureLabel.raise_()
+        self.keyBarcodeLineEdit.raise_()
+        self.takeCarPushButton.raise_()
+        self.keyPictureLabel.raise_()
+        self.dateLabel.raise_()
+        self.returnCarPushButton.raise_()
+        self.calendarLabel.raise_()
+        self.timeLabel.raise_()
+        self.clockLabel.raise_()
+        self.goBackPushButton.raise_()
+        self.carInfoLabel.raise_()
+        self.okPushButton.raise_()
+        self.keyReturnBarcodeLineEdit.raise_()
+        self.statusFrame.raise_()
+        self.statusLabel.raise_()
+        self.soundCheckBox.raise_()
+        self.vehiclePictureLabel.raise_()
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1136, 33))
+        self.menubar.setGeometry(QRect(0, 0, 1066, 33))
         self.menubar.setStyleSheet(u"background-color: rgb(0, 33, 72);\n"
 "color: rgb(255, 255, 255);")
         self.menuTiedosto = QMenu(self.menubar)
@@ -351,8 +348,6 @@ class Ui_MainWindow(object):
         self.statusLabel.setText(QCoreApplication.translate("MainWindow", u"Tila", None))
         self.soundCheckBox.setText("")
         self.vehiclePictureLabel.setText("")
-        self.label.setText("")
-        self.label_2.setText("")
         self.menuTiedosto.setTitle(QCoreApplication.translate("MainWindow", u"Tiedosto", None))
         self.menuEdelliset.setTitle(QCoreApplication.translate("MainWindow", u"Edelliset", None))
     # retranslateUi
