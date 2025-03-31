@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1066</width>
-    <height>900</height>
+    <width>1362</width>
+    <height>760</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Auto-osaston ajoneuvojen lainaus</string>
   </property>
   <property name="windowIcon">
    <iconset theme="emblem-shared"/>
@@ -45,7 +45,7 @@ color: rgb(32, 75, 70);</string>
      <string/>
     </property>
     <property name="echoMode">
-     <enum>QLineEdit::EchoMode::NoEcho</enum>
+     <enum>QLineEdit::EchoMode::Password</enum>
     </property>
     <property name="alignment">
      <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -63,19 +63,21 @@ color: rgb(32, 75, 70);</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>380</x>
       <y>330</y>
       <width>181</width>
-      <height>31</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>18</pointsize>
+      <family>Trebuchet MS</family>
+      <pointsize>24</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 127);</string>
+     <string notr="true">background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
      <string/>
@@ -101,7 +103,7 @@ color: rgb(32, 75, 70);</string>
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
+      <pointsize>42</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -109,7 +111,7 @@ color: rgb(32, 75, 70);</string>
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Tallentaa henkilön tiedot tietokantaa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Avaa auton lainausikkunan&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="toolTipDuration">
      <number>3000</number>
@@ -181,8 +183,8 @@ background-color: rgb(140, 51, 85);</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>610</y>
+      <x>80</x>
+      <y>510</y>
       <width>221</width>
       <height>41</height>
      </rect>
@@ -202,7 +204,7 @@ background-color: rgb(140, 51, 85);</string>
    <widget class="QPushButton" name="returnCarPushButton">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>570</x>
       <y>0</y>
       <width>371</width>
       <height>101</height>
@@ -210,7 +212,7 @@ background-color: rgb(140, 51, 85);</string>
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
+      <pointsize>42</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -218,7 +220,7 @@ background-color: rgb(140, 51, 85);</string>
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Tallentaa henkilön tiedot tietokantaa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Avaa auton palautusikkunan&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="toolTipDuration">
      <number>3000</number>
@@ -241,7 +243,7 @@ background-color: rgb(140, 51, 85);</string>
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>600</y>
+      <y>500</y>
       <width>31</width>
       <height>51</height>
      </rect>
@@ -263,7 +265,7 @@ background-color: rgb(140, 51, 85);</string>
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>690</y>
+      <y>580</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -283,8 +285,8 @@ background-color: rgb(140, 51, 85);</string>
    <widget class="QLabel" name="clockLabel">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>690</y>
+      <x>40</x>
+      <y>580</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -302,8 +304,8 @@ background-color: rgb(140, 51, 85);</string>
    <widget class="QPushButton" name="goBackPushButton">
     <property name="geometry">
      <rect>
-      <x>840</x>
-      <y>440</y>
+      <x>1110</x>
+      <y>450</y>
       <width>171</width>
       <height>91</height>
      </rect>
@@ -338,15 +340,17 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="lenderNameLabel">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>360</y>
-      <width>181</width>
-      <height>81</height>
+      <x>30</x>
+      <y>320</y>
+      <width>261</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
+      <family>Trebuchet MS</family>
+      <pointsize>24</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -363,9 +367,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>360</x>
-      <y>370</y>
+      <y>420</y>
       <width>181</width>
-      <height>71</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -386,8 +390,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="okPushButton">
     <property name="geometry">
      <rect>
-      <x>840</x>
-      <y>340</y>
+      <x>1110</x>
+      <y>350</y>
       <width>171</width>
       <height>91</height>
      </rect>
@@ -424,19 +428,21 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>380</x>
       <y>330</y>
       <width>181</width>
-      <height>31</height>
+      <height>52</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>18</pointsize>
+      <family>Trebuchet MS</family>
+      <pointsize>24</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 127);</string>
+     <string notr="true">background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
      <string/>
@@ -454,10 +460,10 @@ color: rgb(255, 255, 255);</string>
    <widget class="QFrame" name="statusFrame">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>110</y>
-      <width>811</width>
-      <height>391</height>
+      <width>1071</width>
+      <height>351</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -469,13 +475,120 @@ color: rgb(255, 255, 255);</string>
     <property name="lineWidth">
      <number>0</number>
     </property>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>60</y>
+       <width>20</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="availableLabel">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>10</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>VAPAANA</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="inUseLabel">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>10</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>AJOSSA</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="inUsePlainTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>60</y>
+       <width>591</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>8</number>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="plainText">
+      <string>AM-15 Renault Megane 5 henkilöä</string>
+     </property>
+    </widget>
     <widget class="QPlainTextEdit" name="availablePlainTextEdit">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>50</y>
-       <width>361</width>
-       <height>331</height>
+       <y>60</y>
+       <width>421</width>
+       <height>261</height>
       </rect>
      </property>
      <property name="font">
@@ -504,122 +617,17 @@ color: rgb(255, 255, 255);</string>
       <bool>true</bool>
      </property>
      <property name="plainText">
-      <string>XSE-778 Toyota BZ4X 5 henkilöä
-XYZ-123 VW Transtporter 3 henkilöä</string>
+      <string/>
      </property>
      <property name="backgroundVisible">
       <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QPlainTextEdit" name="inUsePlainTextEdit">
-     <property name="geometry">
-      <rect>
-       <x>430</x>
-       <y>60</y>
-       <width>351</width>
-       <height>331</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);
-border-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::NoFrame</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>8</number>
-     </property>
-     <property name="plainText">
-      <string>AM-15 Renault Megane 5 henkilöä</string>
-     </property>
-    </widget>
-    <widget class="Line" name="line">
-     <property name="geometry">
-      <rect>
-       <x>390</x>
-       <y>50</y>
-       <width>20</width>
-       <height>321</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>3</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Orientation::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QLabel" name="availableLabel">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>10</y>
-       <width>131</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>16</pointsize>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>VAPAANA</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignmentFlag::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="inUseLabel">
-     <property name="geometry">
-      <rect>
-       <x>550</x>
-       <y>10</y>
-       <width>131</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>16</pointsize>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>AJOSSA</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
    </widget>
    <widget class="QLabel" name="statusLabel">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>250</x>
       <y>10</y>
       <width>441</width>
       <height>91</height>
@@ -644,8 +652,8 @@ border-color: rgb(255, 255, 255);</string>
    <widget class="QCheckBox" name="soundCheckBox">
     <property name="geometry">
      <rect>
-      <x>940</x>
-      <y>10</y>
+      <x>1120</x>
+      <y>20</y>
       <width>81</width>
       <height>61</height>
      </rect>
@@ -682,53 +690,88 @@ border-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="vehiclePictureLabel">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>570</y>
-      <width>381</width>
-      <height>251</height>
+      <x>270</x>
+      <y>440</y>
+      <width>341</width>
+      <height>241</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>28</pointsize>
-     </font>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>uiPictures/defaultVehicles.png</pixmap>
+     <pixmap>uiPictures/OXZ915.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <zorder>lenderNameLabel</zorder>
+   <widget class="QLabel" name="registerPlateBGLabel">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>320</y>
+      <width>241</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>uiPictures/Auton_matala_EU-kilpi_118x442_mm.png-removebg-preview.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logoLabel">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>10</y>
+      <width>71</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>uiPictures/Raseko-logo-pysty_NEGA.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>ssnLineEdit</zorder>
-   <zorder>lenderPictureLabel</zorder>
-   <zorder>keyBarcodeLineEdit</zorder>
    <zorder>takeCarPushButton</zorder>
    <zorder>keyPictureLabel</zorder>
+   <zorder>lenderPictureLabel</zorder>
    <zorder>dateLabel</zorder>
    <zorder>returnCarPushButton</zorder>
    <zorder>calendarLabel</zorder>
    <zorder>timeLabel</zorder>
    <zorder>clockLabel</zorder>
    <zorder>goBackPushButton</zorder>
-   <zorder>carInfoLabel</zorder>
+   <zorder>lenderNameLabel</zorder>
    <zorder>okPushButton</zorder>
-   <zorder>keyReturnBarcodeLineEdit</zorder>
    <zorder>statusFrame</zorder>
    <zorder>statusLabel</zorder>
    <zorder>soundCheckBox</zorder>
    <zorder>vehiclePictureLabel</zorder>
+   <zorder>registerPlateBGLabel</zorder>
+   <zorder>keyReturnBarcodeLineEdit</zorder>
+   <zorder>keyBarcodeLineEdit</zorder>
+   <zorder>carInfoLabel</zorder>
+   <zorder>logoLabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1066</width>
+     <width>1362</width>
      <height>33</height>
     </rect>
    </property>
@@ -736,24 +779,6 @@ border-color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgb(0, 33, 72);
 color: rgb(255, 255, 255);</string>
    </property>
-   <widget class="QMenu" name="menuTiedosto">
-    <property name="title">
-     <string>Tiedosto</string>
-    </property>
-    <widget class="QMenu" name="menuEdelliset">
-     <property name="title">
-      <string>Edelliset</string>
-     </property>
-     <addaction name="actionKalle"/>
-     <addaction name="actionVille"/>
-     <addaction name="actionJaana"/>
-     <addaction name="actionMikko"/>
-    </widget>
-    <addaction name="actionLopeta"/>
-    <addaction name="menuEdelliset"/>
-    <addaction name="actionTallenna_nimell"/>
-   </widget>
-   <addaction name="menuTiedosto"/>
   </widget>
   <widget class="QStatusBar" name="statusbar">
    <property name="font">
@@ -768,42 +793,6 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgb(243, 89, 148);</string>
    </property>
   </widget>
-  <action name="actionLopeta">
-   <property name="icon">
-    <iconset theme="application-exit"/>
-   </property>
-   <property name="text">
-    <string>Lopeta</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+Q</string>
-   </property>
-  </action>
-  <action name="actionKalle">
-   <property name="text">
-    <string>Kalle</string>
-   </property>
-  </action>
-  <action name="actionVille">
-   <property name="text">
-    <string>Ville</string>
-   </property>
-  </action>
-  <action name="actionJaana">
-   <property name="text">
-    <string>Jaana</string>
-   </property>
-  </action>
-  <action name="actionMikko">
-   <property name="text">
-    <string>Mikko</string>
-   </property>
-  </action>
-  <action name="actionTallenna_nimell">
-   <property name="text">
-    <string>Tallenna nimellä...</string>
-   </property>
-  </action>
  </widget>
  <resources>
   <include location="userUiRescources.qrc"/>
