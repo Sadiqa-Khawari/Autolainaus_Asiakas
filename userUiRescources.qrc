@@ -1,15 +1,20 @@
 <RCC>
   <qresource prefix="pictures">
-    <file>uiPictures/muted.png</file>
-    <file>uiPictures/unmuted.png</file>
-    <file>uiPictures/soundOff.png</file>
-    <file>uiPictures/soundOn.png</file>
+    <file>uiPictures/keys.png</file>
+    <file>uiPictures/Auton matala EU-kilpi 118x442 mm.png.jpg</file>
     <file>uiPictures/back.png</file>
     <file>uiPictures/clock.png</file>
     <file>uiPictures/calendar.png</file>
     <file>uiPictures/Teacher.png</file>
     <file>uiPictures/keys.png</file>
+    <file>uiPictures/Auton matala EU-kilpi 118x442 mm.png.jpg</file>
+    <file>uiPictures/plateBGPicture.png</file>
     <file>uiPictures/ota.png</file>
     <file>uiPictures/palauta.drawio.png</file>
   </qresource>
+  <qresource>
+    <file>uiPictures/Auton_matala_EU-kilpi_118x442_mm.png-removebg-preview (1).png</file>
+  </qresource>
+  <qresource/>
+  <qresource/>
 </RCC>

@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'user.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.8.0
+## Created by: Qt User Interface Compiler version 6.9.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -34,7 +34,7 @@ class Ui_MainWindow(object):
         self.ssnLineEdit = QLineEdit(self.centralwidget)
         self.ssnLineEdit.setObjectName(u"ssnLineEdit")
         self.ssnLineEdit.setEnabled(True)
-        self.ssnLineEdit.setGeometry(QRect(60, 470, 191, 31))
+        self.ssnLineEdit.setGeometry(QRect(50, 470, 231, 41))
         font = QFont()
         font.setPointSize(18)
         self.ssnLineEdit.setFont(font)
@@ -228,7 +228,7 @@ class Ui_MainWindow(object):
         self.logoLabel.setScaledContents(True)
         self.reasonComboBox = QComboBox(self.centralwidget)
         self.reasonComboBox.setObjectName(u"reasonComboBox")
-        self.reasonComboBox.setGeometry(QRect(410, 130, 321, 61))
+        self.reasonComboBox.setGeometry(QRect(320, 130, 471, 61))
         font11 = QFont()
         font11.setPointSize(32)
         font11.setBold(True)
@@ -238,7 +238,7 @@ class Ui_MainWindow(object):
         self.registerPlateBGLabel = QLabel(self.centralwidget)
         self.registerPlateBGLabel.setObjectName(u"registerPlateBGLabel")
         self.registerPlateBGLabel.setGeometry(QRect(780, 420, 241, 71))
-        self.registerPlateBGLabel.setPixmap(QPixmap(u"uiPictures/Auton_matala_EU-kilpi_118x442_mm.png-removebg-preview.png"))
+        self.registerPlateBGLabel.setPixmap(QPixmap(u"uiPictures/plateBGPicture.png"))
         self.registerPlateBGLabel.setScaledContents(True)
         self.keyBarcodeLineEdit = QLineEdit(self.centralwidget)
         self.keyBarcodeLineEdit.setObjectName(u"keyBarcodeLineEdit")
@@ -258,19 +258,20 @@ class Ui_MainWindow(object):
         self.keyPictureReturnLabel.setObjectName(u"keyPictureReturnLabel")
         self.keyPictureReturnLabel.setEnabled(True)
         self.keyPictureReturnLabel.setGeometry(QRect(450, 230, 201, 141))
-        self.keyPictureReturnLabel.setPixmap(QPixmap(u":/pictures/uiPictures/keys.png"))
+        self.keyPictureReturnLabel.setPixmap(QPixmap(u"uiPictures/keys.png"))
         self.keyPictureReturnLabel.setScaledContents(True)
         self.registerPlateBGReturnLabel = QLabel(self.centralwidget)
         self.registerPlateBGReturnLabel.setObjectName(u"registerPlateBGReturnLabel")
-        self.registerPlateBGReturnLabel.setGeometry(QRect(440, 380, 241, 71))
-        self.registerPlateBGReturnLabel.setPixmap(QPixmap(u"uiPictures/Auton_matala_EU-kilpi_118x442_mm.png-removebg-preview.png"))
+        self.registerPlateBGReturnLabel.setGeometry(QRect(440, 380, 251, 71))
+        self.registerPlateBGReturnLabel.setPixmap(QPixmap(u"uiPictures/Auton matala EU-kilpi 118x442 mm.png.jpg"))
         self.registerPlateBGReturnLabel.setScaledContents(True)
         self.keyReturnBarcodeLineEdit = QLineEdit(self.centralwidget)
         self.keyReturnBarcodeLineEdit.setObjectName(u"keyReturnBarcodeLineEdit")
         self.keyReturnBarcodeLineEdit.setEnabled(True)
-        self.keyReturnBarcodeLineEdit.setGeometry(QRect(480, 390, 181, 52))
+        self.keyReturnBarcodeLineEdit.setGeometry(QRect(480, 390, 191, 52))
         self.keyReturnBarcodeLineEdit.setFont(font4)
         self.keyReturnBarcodeLineEdit.setStyleSheet(u"background-color: rgb(208, 208, 208);")
+        self.keyReturnBarcodeLineEdit.setFrame(False)
         self.keyReturnBarcodeLineEdit.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.keyReturnBarcodeLineEdit.setClearButtonEnabled(True)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -359,3 +360,4 @@ class Ui_MainWindow(object):
         self.keyReturnBarcodeLineEdit.setText("")
         self.keyReturnBarcodeLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Lue avain", None))
     # retranslateUi
+

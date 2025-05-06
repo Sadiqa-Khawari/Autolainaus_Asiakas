@@ -26,10 +26,10 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>50</x>
       <y>470</y>
-      <width>191</width>
-      <height>31</height>
+      <width>231</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -117,7 +117,7 @@ background-color: rgb(140, 51, 85);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="userUiRescources.qrc">:/pictures/uiPictures/Teacher.png</pixmap>
+     <pixmap>:/pictures/uiPictures/Teacher.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -198,7 +198,7 @@ background-color: rgb(140, 51, 85);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="userUiRescources.qrc">:/pictures/uiPictures/calendar.png</pixmap>
+     <pixmap>:/pictures/uiPictures/calendar.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -241,7 +241,7 @@ background-color: rgb(140, 51, 85);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="userUiRescources.qrc">:/pictures/uiPictures/clock.png</pixmap>
+     <pixmap>:/pictures/uiPictures/clock.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -273,7 +273,7 @@ color: rgb(255, 255, 255);</string>
      <string>KUMOA</string>
     </property>
     <property name="icon">
-     <iconset resource="userUiRescources.qrc">
+     <iconset>
       <normaloff>:/pictures/uiPictures/back.png</normaloff>:/pictures/uiPictures/back.png</iconset>
     </property>
     <property name="iconSize">
@@ -640,9 +640,9 @@ border-color: rgb(255, 255, 255);</string>
    <widget class="QComboBox" name="reasonComboBox">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>320</x>
       <y>130</y>
-      <width>321</width>
+      <width>471</width>
       <height>61</height>
      </rect>
     </property>
@@ -678,7 +678,7 @@ border-color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>uiPictures/Auton_matala_EU-kilpi_118x442_mm.png-removebg-preview.png</pixmap>
+     <pixmap>uiPictures/plateBGPicture.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -735,7 +735,7 @@ border-color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="userUiRescources.qrc">:/pictures/uiPictures/keys.png</pixmap>
+     <pixmap>:/pictures/uiPictures/keys.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -757,7 +757,7 @@ border-color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="userUiRescources.qrc">:/pictures/uiPictures/keys.png</pixmap>
+     <pixmap>uiPictures/keys.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -768,7 +768,7 @@ border-color: rgb(255, 255, 255);</string>
      <rect>
       <x>440</x>
       <y>380</y>
-      <width>241</width>
+      <width>251</width>
       <height>71</height>
      </rect>
     </property>
@@ -776,7 +776,7 @@ border-color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>uiPictures/Auton_matala_EU-kilpi_118x442_mm.png-removebg-preview.png</pixmap>
+     <pixmap>uiPictures/Auton matala EU-kilpi 118x442 mm.png.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -790,7 +790,7 @@ border-color: rgb(255, 255, 255);</string>
      <rect>
       <x>480</x>
       <y>390</y>
-      <width>181</width>
+      <width>191</width>
       <height>52</height>
      </rect>
     </property>
@@ -806,6 +806,9 @@ border-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
     </property>
     <property name="alignment">
      <set>Qt::AlignmentFlag::AlignCenter</set>
