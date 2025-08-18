@@ -61,7 +61,7 @@ class Ui_MainWindow(object):
         self.lenderPictureLabel.setEnabled(True)
         self.lenderPictureLabel.setGeometry(QRect(50, 230, 211, 231))
         self.lenderPictureLabel.setCursor(QCursor(Qt.CursorShape.IBeamCursor))
-        self.lenderPictureLabel.setPixmap(QPixmap(u":/pictures/uiPictures/Teacher.png"))
+        self.lenderPictureLabel.setPixmap(QPixmap(u"uiPictures/Teacher.png"))
         self.lenderPictureLabel.setScaledContents(False)
         self.dateLabel = QLabel(self.centralwidget)
         self.dateLabel.setObjectName(u"dateLabel")

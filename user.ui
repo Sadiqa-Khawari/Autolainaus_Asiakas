@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1362</width>
-    <height>760</height>
+    <width>1359</width>
+    <height>728</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -117,7 +117,7 @@ background-color: rgb(140, 51, 85);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>:/pictures/uiPictures/Teacher.png</pixmap>
+     <pixmap>uiPictures/Teacher.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -850,7 +850,7 @@ border-color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1362</width>
+     <width>1359</width>
      <height>33</height>
     </rect>
    </property>
